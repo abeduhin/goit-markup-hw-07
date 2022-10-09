@@ -1,0 +1,50 @@
+.section-comand {
+    background-color: rgba(245, 244, 250, 1);
+    
+}
+
+.section-comand, .section-сlients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.feature-comand {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 30px;      
+}
+
+.feature-comand-position {
+    background-color: var(--white-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.position {
+    font-weight: 400;
+    color: var(--grey-color) ;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.list-comand {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;   
+    
+}
+
+.list-comand-cart {
+    text-align: center;
+    box-shadow: 0 2px 1px 0 rgba(0, 2, 1, 0.2),
+                0 1px 1px 0 rgba(0, 1, 1, 0.14);
+}
+
+
+.list-comand-icons {
+    list-style-type: none;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

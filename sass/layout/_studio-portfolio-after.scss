@@ -1,0 +1,21 @@
+.nav-list__studio-index::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 46px;
+    height: 4px;
+    background-color: var(--blue-color);
+}
+
+.portfolio-portfolio::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 46px;
+    height: 4px;
+    background-color: var(--blue-color);
+}
