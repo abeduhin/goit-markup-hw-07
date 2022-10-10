@@ -6,8 +6,13 @@
 }
 
 .logo-footer {
-    color: var(--white-color);  
+    color: var(--white-color);
+
+    &:hover, &:focus {
+        color: var(--blue-color);
+    }
     
+       
 }
 
 .address-list {
@@ -23,13 +28,22 @@
 .adres {
     line-height: 1.71;
     text-decoration: none;
-    color: var(--white-color)
+    color: var(--white-color);
+
+    &:hover, &:focus {
+        color: var(--blue-color);
+    }
+
 }
 
 .mail-footer, .tel-footer {
     line-height: 1.71;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+
+    &:hover, &:focus {
+        color: var(--blue-color);
+    }
        
 }
 
@@ -76,12 +90,14 @@
     background-size: 40px 40px;
     background-position: center center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover, &:focus {
+        background-color: var(--blue-color);
+    }
        
 }
 
-.list-connect-icon:hover, .list-connect-icon:focus {
-    background-color: var(--blue-color);
-}
+
 
 .connect-icon {
     width: 20px;

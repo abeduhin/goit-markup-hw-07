@@ -90,11 +90,9 @@ img {
   background-position: center center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .list-comand-icon:hover, .list-comand-icon:focus {
   background-color: var(--blue-color);
 }
-
 .list-comand-icon:hover .comand-icon {
   fill: var(--white-color);
 }
@@ -105,9 +103,21 @@ img {
   fill: rgb(117, 117, 117);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.comand-icon:hover, .comand-icon:focus {
+.comand-icon:hover, .comand-icon .comand-icon:focus {
   fill: var(--white-color);
+}
+
+.logo {
+  padding-left: 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Raleway";
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.logo-span {
+  color: var(--blue-color);
 }
 
 .container-header {
@@ -160,6 +170,9 @@ img {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-contakt .icon-contakt:hover, .icon-contakt:focus {
+  fill: var(--blue-color);
+}
 
 .icon-tel {
   display: flex;
@@ -170,8 +183,6 @@ img {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-contakt:hover, .icon-contakt:focus,
 .icon-tel:hover, .icon-tel:focus {
   fill: var(--blue-color);
 }
@@ -273,7 +284,6 @@ img {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .btn-headline:hover, .btn-headline:focus {
   color: var(--white-color);
 }
@@ -403,11 +413,9 @@ img {
   border: 1px solid rgb(175, 177, 184);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .list-clients-cart:hover, .list-clients-cart:focus {
   border-color: var(--blue-color);
 }
-
 .list-clients-cart:hover .clients-icon {
   fill: var(--blue-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -419,7 +427,6 @@ img {
   align-items: center;
   padding: 16px 0;
 }
-
 .list-clients-icon:hover .clients-icon {
   fill: var(--blue-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -431,7 +438,6 @@ img {
   fill: rgb(175, 177, 184);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients-icon:hover, .clients-icon:focus {
   fill: var(--blue-color);
 }
@@ -510,7 +516,6 @@ img {
   background-position: center center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .list-connect-icon:hover, .list-connect-icon:focus {
   background-color: var(--blue-color);
 }
@@ -616,15 +621,14 @@ img {
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.general {
-  min-width: 78px;
-}
-
 .btn-port-li:hover, .btn-port-li:focus {
   background-color: rgb(33, 150, 243);
   color: var(--white-color);
   box-shadow: 0 2px 1px 0 rgba(0, 2, 1, 0.2), 0 1px 1px 0 rgba(0, 1, 1, 0.14);
+}
+
+.general {
+  min-width: 78px;
 }
 
 .projects {
@@ -648,7 +652,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-
 .project-img::before {
   position: absolute;
   display: inline-block;
@@ -677,7 +680,15 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item:hover .project-img-text {
+.project-item {
+  position: relative;
+  border: 1px solid rgb(238, 238, 238);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-item:hover, .project-item:focus {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
+.project-item:hover, .project-item .project-img-text {
   transform: translateY(-280px);
   opacity: 1;
 }
@@ -698,16 +709,6 @@ img {
   margin-bottom: 20px;
   margin-left: 25px;
   margin-right: 25px;
-}
-
-.project-item {
-  position: relative;
-  border: 1px solid rgb(238, 238, 238);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-item:hover, .project-item:focus {
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06);
 }
 
 .backdrop {
@@ -757,11 +758,9 @@ img {
   padding: 0;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .btn-modal:hover, .btn-modal:focus {
   border-color: var(--blue-color);
 }
-
 .btn-modal:hover .bacdrop-icon {
   fill: var(--blue-color);
 }
