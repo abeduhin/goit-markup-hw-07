@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -24,6 +25,11 @@
             <li><a href="#"class="nav-list__contakts">Контакти</a></li>
             </ul>            
         </nav>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+            <svg class="burger-mobile-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
             <ul class="contakt">
             <li class="contakt__item">                
                 <a href="mailto:info@devstudio.com"class="mail">
@@ -42,19 +48,107 @@
             </li>
             </ul>
         
-        </div>               
+        </div> 
+         <!--Mobail menu-->
+         <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-btn-backdrop"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__header">
+                    <nav class="navigation-mobile">
+                      <ul class="navigation-mobile__list list">
+                        <li class="navigation-mobile__item">
+                          <a
+                            class="navigation-mobile__link active link"
+                            href="index.html"
+                            >Студія</a
+                          >
+                        </li>
+                        <li class="navigation-mobile__item">
+                          <a class="navigation-mobile__link link" href="portfolio.html"
+                            >Портфоліо</a
+                          >
+                        </li>
+                        <li class="navigation-mobile__item">
+                          <a class="navigation-mobile__link link" href="">Контакти</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div><div class="mobile-menu__header">
+                    <nav class="navigation-mobile">
+                      <ul class="navigation-mobile__list list">
+                        <li class="navigation-mobile__item">
+                          <a
+                            class="navigation-mobile__link active link"
+                            href="index.html"
+                            >Студія</a
+                          >
+                        </li>
+                        <li class="navigation-mobile__item">
+                          <a class="navigation-mobile__link link" href="portfolio.html"
+                            >Портфоліо</a
+                          >
+                        </li>
+                        <li class="navigation-mobile__item">
+                          <a class="navigation-mobile__link link" href="">Контакти</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="mobile-menu__footer">
+                    <ul class="contact-mobile__list list">
+                      <li class="contact-mobile__item-tel">
+                        <a
+                          class="contact-mobile__link-tel link"
+                          href="tel:+380961111111"
+                        >
+                          +380961111111</a
+                        >
+                      </li>
+                      <li class="contact-mobile__item-mail">
+                        <a
+                          class="contact-mobile__link-mail link"
+                          href="mailto:info@devstudio.com"
+                        >
+                          info@devstudio.com</a
+                        >
+                      </li>
+                    </ul>
+        
+                    <ul class="social-mobile__list list">
+                      <li class="social-mobile__item">
+                        <a href="" class="social-mobile__link link">Instagram</a>
+                      </li>
+                      <li class="social-mobile__item">
+                        <a href="" class="social-mobile__link link">Twitter</a>
+                      </li>
+                      <li class="social-mobile__item">
+                        <a href="" class="social-mobile__link link">Facebook</a>
+                      </li>
+                      <li class="social-mobile__item">
+                        <a href="" class="social-mobile__link link">LinkedIn</a>
+                      </li>
+                    </ul>
+                </div>
+        
+            </div>
+         </div>
+
           
         </header>
     <main>
         <!--main-Шапка-->
-        <section class="main">
+        <!-- <section class="main">
             <div class="container">
         <h1 class="main__headline">Ефективні рішення для вашого бізнесу</h1>
         <button type="button"class="btn-headline" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
         <!--hang-Особливості-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
             <h2 class="visually-hidden">Особливості</h2>
         <ul class="list-hang">
@@ -100,9 +194,9 @@
             </li>
         </ul>
             </div>
-        </section>
+        </section> -->
         <!--Чим ми займаеємося-->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
             <h2 class="feature-section">Чим ми займаємося</h2>
             <ul class="list-decktop">
@@ -121,9 +215,9 @@
             </ul>
             </div>
             
-        </section>
+        </section> -->
         <!--Наша команда-->
-        <section class="section-comand">
+        <!-- <section class="section-comand">
             <div class="container">
             <h2 class="feature-section">Наша команда</h2>
             <ul class="list-comand">
@@ -274,9 +368,9 @@
                 
             </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Постійні клієнти -->
-        <section class="section-сlients">
+        <!-- <section class="section-сlients">
             <div class="container">
             <h2 class="feature-section">Постійні клієнти</h2>
             <ul class="list-clients">
@@ -330,9 +424,9 @@
         </section>
         
 
-    </main>
+    </main> -->
     <!--Підвал-->
-    <footer class="footer-container">
+    <!-- <footer class="footer-container">
         <div class="container footer-wrapper">
             <div class="footer-adres">
         <a href="#" class="logo-footer"><span class="logo-span">Web</span>Studio</a>
@@ -400,9 +494,9 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="btn-modal" data-modal-close>
                 <svg class="bacdrop-icon">
@@ -455,7 +549,9 @@
 
         </div>
     </div>
-    
-    <script src="./js/modal.js"></script>
+
+        
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

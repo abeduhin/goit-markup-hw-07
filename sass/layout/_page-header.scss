@@ -1,101 +1,135 @@
-.container-header { 
-    padding-top: 24px;
-    padding-bottom: 25px;
-    background-color: var(--white-color);
-    border-bottom: 1px solid rgba(236, 236, 236, 1);    
-
-}
-
-.container-header-page {  
-    display: flex;
-    align-items: center;
-}
-
-.nav-list { 
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    padding-left: 95px;
-    padding-right: 310px;
-
-}
-
-.logo, .logo-footer {
-    font-family:'Raleway';
-    font-size: 26px;
-    color:rgba(0, 0, 0, 1) ;
-    text-decoration: none;
-
-}
-.logo {
-    padding-left: 0px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.logo-span {
-    color: var(--blue-color);
-}
-    
-.nav-list {
-    font-weight: 500;
-    font-size: 14px; 
-    list-style-type: none;          
-} 
-
-.icon-contakt {
-    display: flex;
-    width: 16px;
-    height: 12px;
-    fill: var(--grey-color);
-    margin-right: 10px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
-    & &:hover, &:focus {
-        fill: var(--blue-color);
-    }
-        
-}
-.icon-tel {
-    display: flex;
-    align-items: center;
-    width: 10px;
-    height: 16px;
-    fill: var(--grey-color);
-    margin-right: 10px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
-    &:hover, &:focus {
-    fill: var(--blue-color);
-}
-
-}
-
-.mail, .tel {
-    display: flex;
-    text-decoration: none; 
-    color: var(--grey-color) ;
-    &:hover, &:focus {
-        color: var(--blue-color);
-    }
-    
-}
-.mail:hover .icon-contakt {
-    fill: var(--blue-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-
-.tel:hover .icon-tel {
-    fill: var(--blue-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+.page-navigation {
+    display: none;
 }
 
 .contakt {
-    list-style-type: none;
-    font-weight: 500;
-    font-size: 14px;
-    display: flex; 
-    align-items: center; 
-    column-gap: 30px;
-    justify-content: flex-end;
-     
+    display: none;
 }
+
+.mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+
+.container-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 10px;
+}
+
+.container-header-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+// .container-header { 
+//     padding-top: 24px;
+//     padding-bottom: 25px;
+//     background-color: var(--white-color);
+//     border-bottom: 1px solid rgba(236, 236, 236, 1);  
+    
+
+// }
+
+// .container-header-page {  
+//     display: flex;
+//     align-items: center;
+// }
+
+// .nav-list { 
+//     display: flex;
+//     align-items: center;
+//     column-gap: 50px;
+//     padding-left: 95px;
+//     padding-right: 310px;
+
+// }
+
+// .logo, .logo-footer {
+//     font-family:'Raleway';
+//     font-size: 26px;
+//     color:rgba(0, 0, 0, 1) ;
+//     text-decoration: none;
+
+// }
+// .logo {
+//     padding-left: 0px;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+// }
+
+// .logo-span {
+//     color: var(--blue-color);
+// }
+    
+// .nav-list {
+//     font-weight: 500;
+//     font-size: 14px; 
+//     list-style-type: none;          
+// } 
+
+// .icon-contakt {
+//     display: flex;
+//     width: 16px;
+//     height: 12px;
+//     fill: var(--grey-color);
+//     margin-right: 10px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+//     & &:hover, &:focus {
+//         fill: var(--blue-color);
+//     }
+        
+// }
+// .icon-tel {
+//     display: flex;
+//     align-items: center;
+//     width: 10px;
+//     height: 16px;
+//     fill: var(--grey-color);
+//     margin-right: 10px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+//     &:hover, &:focus {
+//     fill: var(--blue-color);
+// }
+
+// }
+
+// .mail, .tel {
+//     display: flex;
+//     text-decoration: none; 
+//     color: var(--grey-color) ;
+//     &:hover, &:focus {
+//         color: var(--blue-color);
+//     }
+    
+// }
+// .mail:hover .icon-contakt {
+//     fill: var(--blue-color);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+// }
+
+// .tel:hover .icon-tel {
+//     fill: var(--blue-color);
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+// }
+
+// .contakt {
+//     list-style-type: none;
+//     font-weight: 500;
+//     font-size: 14px;
+//     display: flex; 
+//     align-items: center; 
+//     column-gap: 30px;
+//     justify-content: flex-end;
+     
+// }

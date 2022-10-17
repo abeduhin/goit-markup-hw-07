@@ -22,6 +22,7 @@ body {
   font-weight: 700;
   line-height: 1.17;
   color: rgb(33, 33, 33);
+  max-width: 768px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -40,13 +41,28 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .section {
   padding-top: 94px;
 }
@@ -60,17 +76,9 @@ img {
   text-align: center;
 }
 
-.logo:hover, .logo:focus,
 .studio-portfolio:hover, .studio-portfolio:focus,
 .nav-list__portfolio-indexx:hover, .nav-list__portfolio-indexx:focus,
-.nav-list__contakts:hover, .nav-list__contakts:focus,
-.mail:hover, .mail:focus,
-.tel:hover, .tel:focus,
-.btn-headline:hover, .btn-headline:focus,
-.logo-footer:hover, .logo-footer:focus,
-.adres:hover, .adres:focus,
-.mail-footer:hover, .mail-footer:focus,
-.tel-footer:hover, .tel-footer:focus {
+.nav-list__contakts:hover, .nav-list__contakts:focus {
   color: var(--blue-color);
 }
 
@@ -115,102 +123,78 @@ img {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+.logo:hover, .logo:focus {
+  color: var(--blue-color);
+}
 
 .logo-span {
   color: var(--blue-color);
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  max-height: 796px;
+  background-color: bisque;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 58px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.page-navigation {
+  display: none;
+}
+
+.contakt {
+  display: none;
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
 .container-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  background-color: var(--white-color);
-  border-bottom: 1px solid rgb(236, 236, 236);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 10px;
 }
 
 .container-header-page {
   display: flex;
   align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
-  padding-left: 95px;
-  padding-right: 310px;
-}
-
-.logo, .logo-footer {
-  font-family: "Raleway";
-  font-size: 26px;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-.logo {
-  padding-left: 0px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-span {
-  color: var(--blue-color);
-}
-
-.nav-list {
-  font-weight: 500;
-  font-size: 14px;
-  list-style-type: none;
-}
-
-.icon-contakt {
-  display: flex;
-  width: 16px;
-  height: 12px;
-  fill: var(--grey-color);
-  margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-contakt .icon-contakt:hover, .icon-contakt:focus {
-  fill: var(--blue-color);
-}
-
-.icon-tel {
-  display: flex;
-  align-items: center;
-  width: 10px;
-  height: 16px;
-  fill: var(--grey-color);
-  margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-tel:hover, .icon-tel:focus {
-  fill: var(--blue-color);
-}
-
-.mail, .tel {
-  display: flex;
-  text-decoration: none;
-  color: var(--grey-color);
-}
-
-.mail:hover .icon-contakt {
-  fill: var(--blue-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tel:hover .icon-tel {
-  fill: var(--blue-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contakt {
-  list-style-type: none;
-  font-weight: 500;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .nav-list__studio-index, .studio-portfolio, .nav-list__portfolio-indexx, .portfolio-portfolio, .nav-list__contakts {
@@ -451,6 +435,9 @@ img {
 .logo-footer {
   color: var(--white-color);
 }
+.logo-footer:hover, .logo-footer:focus {
+  color: var(--blue-color);
+}
 
 .address-list {
   font-weight: 400;
@@ -466,11 +453,17 @@ img {
   text-decoration: none;
   color: var(--white-color);
 }
+.adres:hover, .adres:focus {
+  color: var(--blue-color);
+}
 
 .mail-footer, .tel-footer {
   line-height: 1.71;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.mail-footer:hover, .mail-footer:focus, .tel-footer:hover, .tel-footer:focus {
+  color: var(--blue-color);
 }
 
 .tel-footer {
